@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FocusPilot Options</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <h2>FocusPilot Settings</h2>
+  <label>Productive Domains (comma separated):<br>
+    <input id="domains" type="text">
+  </label><br>
+  <label>Distraction Switch Threshold:<br>
+    <input id="switchThreshold" type="number" min="1">
+  </label><br>
+  <label>Reminder Cooldown (ms):<br>
+    <input id="cooldown" type="number" min="1000">
+  </label><br>
+  <button id="saveBtn">Save</button>
+  <div id="status"></div>
+  <script src="options.js"></script>
+</body>
+</html>

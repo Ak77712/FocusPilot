@@ -1,0 +1,36 @@
+#focusTimerCard {
+	background: rgba(255,255,255,0.18);
+	backdrop-filter: blur(16px);
+	border-radius: 18px;
+	box-shadow: 0 4px 16px #6c63ff22;
+	padding: 18px 20px;
+	margin-top: 18px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#focusMinutes {
+	width: 60px;
+	padding: 6px 8px;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+	background: rgba(255,255,255,0.5);
+	font-size: 15px;
+}
+#focusTimerDisplay {
+	margin-top: 12px;
+	font-size: 22px;
+	color: #27ae60;
+	text-shadow: 0 1px 8px #fff8;
+	display: none;
+}
+body { font-family: 'Segoe UI', 'Roboto', Arial, sans-serif; min-width: 260px; background:rgba(255,255,255,0.12);backdrop-filter:blur(24px); }
+#stats { transition: box-shadow 0.3s, background 0.3s; background:rgba(255,255,255,0.18);backdrop-filter:blur(24px); border-radius:24px; box-shadow:0 8px 32px #6c63ff22; }
+h2 { font-weight: 600; letter-spacing: 0.5px; }
+#focusedTime, #distractionCount, #samples, #lastNudge { margin-bottom: 6px; }
+#chart { height: 40px; width: 100%; background:rgba(255,255,255,0.22); border-radius: 12px; overflow: hidden; margin-bottom: 10px; backdrop-filter:blur(12px); }
+button { font-size: 17px; transition: background 0.2s, color 0.2s; box-shadow: 0 1px 8px #6c63ff88; border-radius:10px; }
+button:active { opacity: 0.8; }
+textarea { width: 100%; min-height: 54px; border-radius: 10px; padding: 10px; border: 1px solid #ccc; font-size: 16px; }
+#reflection { animation: fadeIn 0.3s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }

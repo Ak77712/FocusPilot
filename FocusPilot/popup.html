@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FocusPilot Stats</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="stats" style="background:rgba(255,255,255,0.18);backdrop-filter:blur(24px);border-radius:24px;padding:24px 28px;box-shadow:0 8px 32px #6c63ff22;">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <img src="https://img.icons8.com/fluency/48/000000/rocket.png" style="width:44px;height:44px;filter:drop-shadow(0 2px 8px #6c63ff88);">
+      <h2 style="margin:0;color:#6c63ff;font-size:22px;text-shadow:0 1px 12px #fff8;">FocusPilot</h2>
+    </div>
+    <div id="focusedTime" style="margin-top:14px;font-size:20px;color:#27ae60;text-shadow:0 1px 8px #fff8;">Focused: ...</div>
+    <div id="distractionCount" style="font-size:18px;color:#e67e22;text-shadow:0 1px 8px #fff8;">Distractions: ...</div>
+    <div id="samples" style="font-size:16px;color:#888;">Samples: ...</div>
+    <div id="lastNudge" style="font-size:15px;color:#888;margin-top:8px;">Last nudge: ...</div>
+    <div id="chart" style="margin:18px 0 10px 0;height:40px;width:100%;background:rgba(255,255,255,0.22);border-radius:12px;overflow:hidden;backdrop-filter:blur(12px);"></div>
+    <div id="focusTimerCard" style="margin-top:18px;background:rgba(255,255,255,0.18);backdrop-filter:blur(16px);border-radius:18px;padding:18px 20px;box-shadow:0 4px 16px #6c63ff22;display:flex;flex-direction:column;align-items:center;">
+      <div style="font-size:17px;color:#6c63ff;margin-bottom:8px;">Start a Focus Timer</div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <input id="focusMinutes" type="number" min="1" max="120" value="25" style="width:60px;padding:6px 8px;border-radius:8px;border:1px solid #ddd;background:rgba(255,255,255,0.5);font-size:15px;"> min
+        <button id="startFocusBtn" style="background:#6c63ff;color:#fff;border:none;padding:8px 18px;border-radius:8px;cursor:pointer;font-size:15px;box-shadow:0 1px 8px #6c63ff88;">Start</button>
+      </div>
+      <div id="focusTimerDisplay" style="margin-top:12px;font-size:22px;color:#27ae60;text-shadow:0 1px 8px #fff8;display:none;">25:00</div>
+    </div>
+    <button id="resetBtn" style="background:#e67e22;color:#fff;border:none;padding:10px 22px;border-radius:10px;font-size:17px;cursor:pointer;box-shadow:0 1px 8px #e67e2288;margin-top:18px;">Reset Stats</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
